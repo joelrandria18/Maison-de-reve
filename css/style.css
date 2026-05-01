@@ -70,8 +70,8 @@ body {
 /* HERO */
 .hero {
     height: 100vh;
-    background: l
-                src('./img/covert.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), 
+                url('./covert.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
