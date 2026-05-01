@@ -153,8 +153,8 @@ body {
 
 .hero-projets {
     height: 70vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), 
-                url('https://source.unsplash.com/random/1600x900/?architectural') center/cover no-repeat;
+    background: 
+                src('./covert.jpg') center/cover no-repeat;
 }
 
 .projects-section {
