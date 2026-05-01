@@ -25,7 +25,7 @@ body {
 
 /* HEADER */
 .header {
-    background: rgba(26, 60, 30, 0.95);
+    background: blue;
     color: white;
     position: fixed;
     width: 100%;
