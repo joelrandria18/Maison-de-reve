@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - Maison de Rêve</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>Maison de <span>Rêve</span></h2>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="./index.html">Accueil</a>
+                <a href="./apropos.html">À propos</a>
+                <a href="./projets.html">Nos Projets</a>
+                <a href="./clients.html">Clients Satisfaits</a>
+                <a href="#" class="active">Contactez-nous</a>
+            </nav>
+
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div class="mobile-menu">
+            <a href="index.html">Accueil</a>
+            <a href="apropos.html">À propos</a>
+            <a href="projets.html">Nos Projets</a>
+            <a href="clients.html">Clients Satisfaits</a>
+            <a href="contact.html" class="active">Contactez-nous</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero hero-projets">
+        <div class="hero-content">
+            <h1>Contactez-nous</h1>
+            <p>Prêt à réaliser la maison de vos rêves ? Parlons de votre projet !</p>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact-section section">
+        <div class="container">
+            <div class="contact-container">
+
+                <!-- Informations de contact -->
+                <div class="contact-info">
+                    <h2>Discutons de votre projet</h2>
+                    <p>Notre équipe vous répondra dans les plus brefs délais.</p>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Antananarivo, Madagascar<br>
+                            Lot II A 45 Bis, Ambohimanga</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+261 34 12 345 67<br>
+                               +261 32 98 765 43</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@maisondereve.mg</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Lundi - Vendredi : 8h00 - 17h00<br>
+                               Samedi : 8h00 - 12h00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire de contact -->
+                <div class="contact-form">
+                    <h3>Envoyez-nous un message</h3>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Nom complet *</label>
+                            <input type="text" name="nom" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Téléphone *</label>
+                                <input type="tel" name="telephone" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Type de projet</label>
+                            <select name="type_projet">
+                                <option value="">Sélectionnez une option</option>
+                                <option value="villa">Villa Moderne</option>
+                                <option value="maison-familiale">Maison Familiale</option>
+                                <option value="residence-secondaire">Résidence Secondaire</option>
+                                <option value="renovation">Rénovation</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Votre message / Description du projet *</label>
+                            <textarea name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary">
+                            Envoyer mon message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+
+    <!-- Script pour le formulaire (simulation) -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert("✅ Merci ! Votre message a été envoyé avec succès.\n\nNous vous contacterons très bientôt.");
+            this.reset();
+        });
+    </script>
+</body>
+</html>
